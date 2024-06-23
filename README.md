@@ -1,6 +1,11 @@
 # NoMake-Zit
 
-## Installation as a NoMake Rule Sets
+This rule set library supports the following platforms:
+1. Linux (ARM64/x86_64)
+2. macOS (ARM64/x86_64)
+3. Windows (x86_64)
+
+## Installation
 
 In your `deno.json`, add `"nomake"` and `"nomake-toolchain/zit"` to `"imports"`:
 
@@ -17,6 +22,13 @@ In your `deno.json`, add `"nomake"` and `"nomake-toolchain/zit"` to `"imports"`:
 
 ```typescript
 import Zit from "nomake-toolchain/zit";
+
+// compression
+await Zit.compress('dir', 'dir.zip.zst');
+await Zit.compress('dir2', 'dir2.tar.gz')
+await Zit.compress('dir3', 'dir3.zip')
+// decompression
+await Zit.decompress('dir.zip.zst', 'dir');
 ```
 
 ## Example
@@ -50,3 +62,7 @@ NM.target(
 
 await NM.makefile()
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
