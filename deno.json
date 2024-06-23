@@ -1,0 +1,6 @@
+{
+    "imports": {
+        "nomake": "https://raw.githubusercontent.com/thautwarm/nomake/v0.1.9/mod.ts",
+        "nomake-toolchain/deps/path": "https://deno.land/std@0.224.0/path/mod.ts"
+    }
+}

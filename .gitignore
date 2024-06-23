@@ -1,0 +1,4 @@
+.nomake_files/
+.vscode/
+deno.lock
+tmp/
