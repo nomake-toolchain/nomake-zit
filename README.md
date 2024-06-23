@@ -63,6 +63,9 @@ NM.target(
 await NM.makefile()
 ```
 
+See this example at [example/](https://github.com/nomake-toolchain/nomake-zit/tree/main/example) for a complete structure. The example directly runs with `deno run -A build.ts build`.
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
