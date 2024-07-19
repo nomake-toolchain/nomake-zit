@@ -22,6 +22,7 @@ In your `deno.json`, add `"nomake"` and `"nomake-toolchain/zit"` to `"imports"`:
 
 ```typescript
 import Zit from "nomake-toolchain/zit";
+// Zit.BuildConfig.ZIT_DOWNLOAD_URL = "your/custom-resource-host"
 
 // compression
 await Zit.compress('dir', 'dir.zip.zst');
