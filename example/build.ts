@@ -1,4 +1,4 @@
-import { NM } from "../config.ts";
+import * as NM from 'nomake';
 import Zit from "../mod.ts";
 
 NM.target(
